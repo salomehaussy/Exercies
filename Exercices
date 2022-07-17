@@ -1,0 +1,30 @@
+function afficher() {
+    let nom = document.getElementById("nom").value;
+    let prenom = document.getElementById("prenom").value;
+    document.getElementById("nom_prenom").value = nom+prenom;
+}
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>Formulaire nom et prenom</h1>
+    <form> 
+   <label> Nom :</label><br />
+    <input type="text" id="nom"/><br /><br />
+   <label>Prénom :</label> <br />
+    <input type="text" id="prenom"/><br /><br />
+    <input type="button" onclick="afficher()" value="Test"/> <br /><br />
+    <label> Nom et Prénom :</label><br />
+    <input type="text" id="nom_prenom" />
+</form>
+    <script src="/exo-formulaire/assets/exoformulaire.js"></script>
+</body>
+</html>
